@@ -13,6 +13,7 @@ import Announcements from './components/Announcements';
 import EvictedList from './components/EvictedList';
 import ContestantModal from './components/ContestantModal';
 import EvictionConfirmModal from './components/EvictionConfirmModal';
+import CommandHero from './components/CommandHero';
 
 function MainCommandCenter() {
   const [activeTab, setActiveTab] = useState('all');
@@ -52,6 +53,8 @@ function MainCommandCenter() {
       <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <main className="bb-main-content">
+        {activeTab === 'all' && <CommandHero setActiveTab={setActiveTab} />}
+
         {/* Full Command Deck View */}
         {activeTab === 'all' && (
           <div className="bb-deck-container">

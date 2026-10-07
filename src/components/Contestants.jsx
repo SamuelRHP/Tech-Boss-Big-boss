@@ -8,12 +8,10 @@ import {
   Trash2,
   Crown,
   ShieldCheck,
-  ShieldOff,
   AlertTriangle,
   UserX,
   Filter,
   Search,
-  SlidersHorizontal,
   Coins,
 } from 'lucide-react';
 

@@ -5,7 +5,6 @@ import {
   TrendingDown,
   Coins,
   CheckCircle2,
-  Clock,
   AlertTriangle,
   ShieldCheck,
   Crown,

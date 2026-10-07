@@ -1,15 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
-  Timer,
   Play,
   Pause,
   RotateCcw,
   AlertTriangle,
   BellRing,
-  Volume2,
   Clock,
-  Sparkles,
-  CheckCircle,
 } from 'lucide-react';
 
 export default function TaskTimer() {
@@ -96,7 +92,6 @@ export default function TaskTimer() {
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
   const isUnderTenSeconds = timeLeft > 0 && timeLeft <= 10;
-  const isZero = timeLeft === 0;
 
   // Percentage for progress ring / bar
   const totalDuration = Math.max(1, initialMinutes * 60 + initialSeconds);

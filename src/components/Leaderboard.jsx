@@ -1,8 +1,8 @@
 import React from 'react';
 import { useHouse } from '../context/HouseContext';
-import { Trophy, Crown, ShieldCheck, AlertTriangle, Plus, Minus, ArrowUpRight } from 'lucide-react';
+import { Trophy, Crown, ShieldCheck, AlertTriangle, Plus, Minus } from 'lucide-react';
 
-export default function Leaderboard({ onSelectContestant }) {
+export default function Leaderboard() {
   const { leaderboard, adjustPoints } = useHouse();
 
   return (

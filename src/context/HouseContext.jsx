@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
+import React, { createContext, useState, useEffect, useMemo } from 'react';
 import {
   INITIAL_CONTESTANTS,
   INITIAL_TASKS,
@@ -396,10 +396,6 @@ export function HouseProvider({ children }) {
   return <HouseContext.Provider value={value}>{children}</HouseContext.Provider>;
 }
 
-export function useHouse() {
-  const context = useContext(HouseContext);
-  if (!context) {
-    throw new Error('useHouse must be used within a HouseProvider');
-  }
-  return context;
-}
+export { HouseContext };
+export { useHouse } from './useHouse';
+export default HouseProvider;

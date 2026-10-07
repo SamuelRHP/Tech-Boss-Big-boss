@@ -7,7 +7,6 @@ import {
   Send,
   Sparkles,
   History,
-  AlertCircle,
   Clock,
   Volume2,
 } from 'lucide-react';

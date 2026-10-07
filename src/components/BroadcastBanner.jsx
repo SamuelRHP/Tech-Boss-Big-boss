@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHouse } from '../context/HouseContext';
-import { Megaphone, X, Volume2, Radio } from 'lucide-react';
+import { X, Radio } from 'lucide-react';
 
 export default function BroadcastBanner() {
   const { currentBroadcast, dismissBroadcast } = useHouse();

@@ -4,7 +4,7 @@ import { Radio, RefreshCw, Crown, ShieldAlert, Clock, Eye, AlertOctagon } from '
 
 export default function Header() {
   const { stats, resetDemoData, dangerZoneContestants } = useHouse();
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [currentTime, setCurrentTime] = useState(() => new Date());
   const [resetConfirmOpen, setResetConfirmOpen] = useState(false);
 
   useEffect(() => {

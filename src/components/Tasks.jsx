@@ -9,7 +9,6 @@ import {
   User,
   Coins,
   Crown,
-  Filter,
 } from 'lucide-react';
 
 export default function Tasks() {

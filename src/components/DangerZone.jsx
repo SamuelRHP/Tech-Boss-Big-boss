@@ -5,7 +5,6 @@ import {
   Flame,
   ShieldCheck,
   UserX,
-  ShieldAlert,
   Crown,
   CheckCircle2,
 } from 'lucide-react';

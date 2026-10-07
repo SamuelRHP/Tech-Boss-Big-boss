@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHouse } from '../context/HouseContext';
-import { UserX, Undo2, Skull, Calendar, ShieldX, AlertOctagon } from 'lucide-react';
+import { UserX, Undo2, Skull, Calendar, ShieldX } from 'lucide-react';
 
 export default function EvictedList() {
   const { evictedContestants, reinstateContestant } = useHouse();
